@@ -1,0 +1,388 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"> <!--웹표준 문자설정-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <!--엣지 기본속성 제거-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> <!--해상도 조절-->
+    <!--검색엔진 최적화-->
+    <meta name="포트폴리오무비플로어" content="포트폴리오용으로 제작한 사이트입니다.">
+    <meta name="Keywords" content="포트폴리오용 웹사이트 제작">
+    <meta name="author" content="박혜원">
+    <title>포트폴리오 무비플로어 : 나의 리뷰</title> 
+      <!--[if lt IE 9]>
+          <script src="js/html5.js"></script>
+      <![endif]--> <!--실행은 됨. 브라우저 출력방지.-->
+    <link href="css/common.css" rel="stylesheet" type="text/css"> <!--공통디자인-->
+    <link href="css/sub03.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script> <!--자바스크립트-->
+    <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>  
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/sub03.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <nav id="gnb_mobile">
+            <div class="LeftWrap">
+              <button href="#" class="close1 sound_only">닫기</button>
+              <div id="wrap_head">
+                <div class="nav_profile">
+                  <p class="user_img"><img src="images/nav_profile.png" alt="프로필 이미지"></p>
+                  <p class="user_name">박혜원</p>
+                  <button class="btn_logout sound_only">로그아웃</button>
+                </div>
+                <ul id="btn1">
+                  <li class="depth1 movie"><a href="#" class="nav_under">영화</a>
+                      <ul class="sub">
+                        <li><a href="#">예매하기</a></li>
+                        <li><a href="#">추천영화</a></li>
+                        <li><a href="#">현재 상영작</a></li>
+                        <li><a href="#">맞춤작 추천</a></li>
+                        <li><a href="#">개봉예정작</a></li>
+                        <li><a href="#">무비플로어 특별관</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1"><a href="#">매거진</a></li>
+                  <li class="depth1 commu"><a href="#" class="nav_under">커뮤니티</a>
+                      <ul class="sub">
+                        <li><a href="#">컬렉션</a></li>
+                        <li><a href="#">리뷰</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1 event"><a href="#" class="nav_under">이벤트</a>
+                      <ul class="sub">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">시사회</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1"><a href="sub01.html">스크랩북</a></li>
+                </ul>
+              </div>
+          </div>
+          </nav> <!-- gnb_mobile end-->
+      <header id="header">
+        <div class="header_box">
+          <div class="h_top">
+            <div class="nav_btn">
+              <button href="#" class="open1">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <h1 id="logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="무비플로어 로고">
+              </a>
+            </h1>
+            <nav id="gnb">
+              <div class="nav_box">
+                <ul class="depth1">
+                    <li><a href="#" class="nav_under">영화</a>
+                      <ul class="depth2 movie">
+                          <li class="dep2_left">
+                            <ul>
+                              <li><a href="#">예매하기</a></li>
+                              <li><a href="#">현재 상영작</a></li>
+                              <li><a href="#">개봉예정작</a></li>
+                            </ul>
+                          </li>
+                          <li class="dep2_right">
+                            <ul>
+                              <li><a href="#">추천영화</a></li>
+                              <li><a href="#">맞춤작 추천</a></li>
+                              <li><a href="#">무비플로어 특별관</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">매거진</a></li>
+                    <li><a href="#" class="nav_under">커뮤니티</a>
+                        <ul class="depth2 no2 commu">
+                            <li><a href="#">컬렉션</a></li>
+                            <li><a href="#">리뷰</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav_under">이벤트</a>
+                        <ul class="depth2 no2 event">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">시사회</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub01.html" class="sub_link">스크랩북</a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="util">
+              <button class="btn_alert sound_only">알림</button>
+              <button class="btn_login sound_only">로그인</button>
+              <button class="btn_search sound_only">검색</button>
+            </div>
+          </div>
+        </div>
+        <div class="sub_visual">
+          <img src="images/sub_img/sub_visual03.jpg" alt="나의 리뷰">
+          <h2>나의 리뷰</h2>
+        </div>
+      </header>
+      <nav id="lnb">
+        <div class="nav_box">
+          <div class="inner">
+          <ul class="depth1">
+            <li><a href="index.html"></a></li>
+            <li><a href="#">스크랩북</a>
+              <ul class="depth2">
+                <li><a href="#">영화</a></li>
+                <li><a href="#">매거진</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="sub01.html" class="on">스크랩북</a></li>
+              </ul>
+            </li>
+            <li><a href="#">나의 리뷰</a>
+              <ul class="depth2">
+                <li><a href="sub01.html">보관함</a></li>
+                <li><a href="#">예매내역</a></li>
+                <li><a href="#">알림</a></li>
+                <li><a href="#">취향분석</a></li>
+                <li><a href="#">나의 컬렉션</a></li>
+                <li><a href="sub03.html" class="on">나의 리뷰</a></li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="my_review">
+        <div class="inner">
+          <div class="review_top">
+            <p class="count">
+              총 <span>12</span>개의 리뷰
+            </p>
+            <div class="popup">
+              <p>최신순</p>
+              <ul>
+                  <li><a href="#">최신순</a></li>
+                  <li><a href="#">평점순</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="review_bot">
+            <div class="all">
+                <ul class="thum_list">
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont1.jpg" alt="루카"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">루카</span>
+                        <a href="#" class="btn_write done">작성완료</a>
+                        <span class="rating">★ 4.0</span>
+                        <span class="tag">#픽사 #귀여운 #감동적인</span>
+                        <span class="thum_date">2021-06-20</span>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont2.jpg" alt="컨저링3"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">컨저링 3 : 악마가 시켰다</span>
+                        <a href="#" class="btn_write done">작성완료</a>
+                        <span class="rating">★ 2.0</span>
+                        <span class="tag">#공포 #스릴있는 #무서운</span>
+                        <span class="thum_date">2021-06-12</span>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont3.jpg" alt="크루엘라"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">크루엘라</span>
+                        <a href="#" class="btn_write done">작성완료</a>
+                        <span class="rating">★ 4.5</span>
+                        <span class="tag">#복수 #디즈니 #빌런</span>
+                        <span class="thum_date">2021-05-28</span>
+                      </p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont4.jpg" alt="빅 피쉬"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">빅 피쉬</span>
+                        <a href="#" class="btn_write done">작성완료</a>
+                        <span class="rating">★ 3.0</span>
+                        <span class="tag">#판타지 #가족 #감동적인</span>
+                        <span class="thum_date">2021-05-17</span>
+                      </p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont5.jpg" alt="해리 포터와 아즈카반의 죄수"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">해리 포터와 아즈카반의 죄수</span>
+                        <a href="#" class="btn_write done">작성완료</a>
+                        <span class="rating">★ 5.0</span>
+                        <span class="tag">#블록버스터 #화려한 #마법</span>
+                        <span class="thum_date">2021-05-09</span>
+                      </p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont6.jpg" alt="화이트 타이거"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">화이트 타이거</span>
+                        <a href="#" class="btn_write undone">작성하기</a>
+                        <span class="rating">★ 4.0</span>
+                        <span class="tag">#범죄 #어두운 #완성도</span>
+                        <span class="thum_date">2021-04-28</span>
+                      </p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont7.jpg" alt="플립"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">플립</span>
+                        <a href="#" class="btn_write done">작성완료</a>
+                        <span class="rating">★ 3.5</span>
+                        <span class="tag">#성장 #멜로 #사랑스러운</span>
+                        <span class="thum_date">2021-04-25</span>
+                      </p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont8.jpg" alt="그랜드 부다페스트 호텔"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">그랜드 부다페스트 호텔</span>
+                        <a href="#" class="btn_write undone">작성하기</a>
+                        <span class="rating">★ 4.5</span>
+                        <span class="tag">#화려한 #영상미 #우정</span>
+                        <span class="thum_date">2021-04-10</span>
+                      </p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont9.jpg" alt="서치"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">서치</span>
+                        <a href="#" class="btn_write done">작성완료</a>
+                        <span class="rating">★ 5.0</span>
+                        <span class="tag">#완성도 #추적 #스릴있는</span>
+                        <span class="thum_date">2021-03-21</span>
+                      </p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont10.jpg" alt="내가 널 사랑할 수 없는 10가지 이유"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">내가 널 사랑할 수 없는 10가지 이유</span>
+                        <a href="#" class="btn_write done">작성완료</a>
+                        <span class="rating">★ 4.0</span>
+                        <span class="tag">#하이틴 #발랄한 #귀여운</span>
+                        <span class="thum_date">2021-03-13</span>
+                      </p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont11.jpg" alt="셰이프 오브 워터"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">셰이프 오브 워터 : 사랑의 모양</span>
+                        <a href="#" class="btn_write undone">작성하기</a>
+                        <span class="rating">★ 3.0</span>
+                        <span class="tag">#어두운 #영상미 #완성도</span>
+                        <span class="thum_date">2021-03-01</span>
+                      </p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="btn_review"><img src="images/sub_img/cont12.jpg" alt="엑시트"></a>
+                    <div class="thum_cont">
+                      <p class="thum_txt">
+                        <span class="tit">엑시트</span>
+                        <a href="#" class="btn_write done">작성완료</a>
+                        <span class="rating">★ 4.0</span>
+                        <span class="tag">#웃긴 #가족 #재난</span>
+                        <span class="thum_date">2021-02-22</span>
+                      </p>
+                      
+                    </div>
+                  </li>
+                </ul>
+                <p class="more">더보기 +</p>
+            </div> <!--all end-->
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+          <div class="notice">
+            <div class="inner">
+              <p>공지사항</p>
+              <section class="vertical-center slider">
+                <div>
+                  <a href="#"><span class="tit">[알림] CGV 극장 시스템 점검 안내 (06/15, 06/22)</span><span class="date">2021-05-27</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] <기적> 시사회 취소 관련</span><span class="date">2021-05-11</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] <스파이럴> 시사회 취소 관련</span><span class="date">2021-05-04</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] 무비플로어 시스템 점검 안내 (05/11)</span><span class="date">2021-05-03</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] 롯데시네마 극장 시스템 점검 안내 (05/04)</span><span class="date">2021-04-28</span></a>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="inner">
+            <div class="f_left">
+              <p class="f_menu">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#" class="bold">청소년보호정책</a>
+              </p>
+              <p class="f_info">
+                무비플로어<br>
+                주소시 주소구 주소로 123 주소빌딩 5층<br>
+                사업자등록번호 123-45-67890 <a href="#">사업자정보확인</a><br>
+                대표자 : 박혜원<br>
+                movpledesk@movieplore.com
+              </p>
+              <p class="f_copy">Copyright 2021. Movieplore All rights reserved.</p>
+              <p class="announce">본 웹사이트는 포트폴리오용으로 제작되었습니다.</p>
+            </div>
+            <div class="f_right">
+              <a href="#"><img src="images/ico_facebook.png" alt="무비플로어 페이스북"></a>
+              <a href="#"><img src="images/ico_instagram.png" alt="무비플로어 인스타그램"></a>
+              <a href="#"><img src="images/ico_youtube.png" alt="무비플로어 유튜브"></a>
+            </div>
+          </div>
+      </footer>
+    </div>
+  </body>
+
+</html>

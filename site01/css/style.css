@@ -1,0 +1,349 @@
+.inner{width:1200px; margin:0 auto;}
+/*1200이하여도 스크롤 생기지 않게*/
+#wrap{width:100%; min-width:1200px; overflow:hidden;} /*반응형은 쓰면 안됨*/
+
+h2{font-weight:700; font-size:3.125rem;}
+h3{font-weight:400; font-size:1.25rem; color:#999; line-height:1.3em;}
+button{cursor:pointer;}
+.btn_more{
+     display:inline-block; 
+     background-color:#fff; border:1px solid #999; padding:15px 30px;
+     color:#555; font-size:1.25rem; font-weight:700; transition:0.3s;}
+
+#pop_up{position:relative;}
+#pop_up img{width:100%;}
+#pop_up .close{
+     width:23px; height:23px; position:absolute; right:30px; top:calc(50% - (23px / 2)); border:none; 
+     outline:none;
+      background-color:transparent; 
+     cursor:pointer; /*마우스 손가락 생기게*/}
+#pop_up .close .sound_only{height:0;}
+#pop_up .close .bar{
+    display:block; width:20px; height:3px; background-color:#fff;
+    border-radius:10px;
+    }
+#pop_up .close .no1{transform:rotate(45deg) translate(2px, 1px);}
+#pop_up .close .no2{transform:rotate(-45deg) translate(1px, 0px);}
+/*#pop_up .close span{
+     display:block; width:15px; height:2px; background-color:#fff;
+     }
+#pop_up .close span:nth-child(1){transform:rotate(45deg) translate(2px, 0px);}
+#pop_up .close span:nth-child(2){transform:rotate(-45deg) translate(1px, 0px);}*/
+/*********************header****************************/
+
+#header .logo{text-align:center; margin-bottom:60px;}
+/*#header #gnb{float:left; margin-left:100px;}*/
+#header .h_top{margin-top:50px;}
+#header .h_top .notice{
+     float:left; background-image:url(../images/ico_notice2.png);
+     background-repeat:no-repeat; background-position:left top;
+     padding-left:40px;
+     }
+#header .h_top:after{content:''; display:block; clear:both;}
+#header .top{float:right; position:relative;}
+#header .top button{width:30px; height:30px; border:none; background:none; outline:none; cursor:pointer; margin-right:10px;}
+#header .top button.user{
+     background:url(../images/ico_user.png) no-repeat center;
+     }
+#header .top button.user.on{background-image:url(../images/ico_user.png);}
+/*user에 on이 붙으면 배경그림을 바꾼다*/
+#header .top button.cart{
+     background:url(../images/ico_cart.png) no-repeat center;
+     }
+#header .top button.cart.on{background-image:url(../images/ico_cart.png);}
+#header .top button.search{
+     background:url(../images/ico_search01.png) no-repeat center;
+     margin-right:0;
+     }
+#header .top button.search.on{background-image:url(../images/ico_close.png);}
+/*#header .top div{
+     width:150px; height:300px; 
+     background-color:#aff; 
+     box-shadow:3px 3px 3px #ccc;
+     position:absolute; left:0; top:30px;
+     display:none;
+     }*/
+#header .top div.search_box{
+     width:300px; height:75px; position:absolute; right:0; top:40px;
+     background-color:#eee; padding:22px 20px; box-sizing:border-box;
+     display:none;
+     }
+#header .top div.search_box:after{content:''; display:block; clear:both;}
+#header .top div.search_box label{float:left;}
+#header .top div.search_box .txt_search{
+     float:left; outline:0; border:2px solid #aaa; padding-left:10px;
+     width:224px; height:30px; box-sizing:border-box; margin-right:5px;
+     }
+#header .top div.search_box .txt_search::placeholder{color:#aaa; font-size:0.875rem;}
+#header .top div.search_box .btn_search{
+     float:left; background-image:url(../images/ico_search02.png);
+     background-color:#0057a4; background-repeat:no-repeat;
+     background-position:center; width:30px; height:30px;
+     margin-right:0;
+     }
+
+/* 네비4 - 메가네비100% 변형*/         
+  /*오버했을때 height:auto로 해보기*/
+    #gnb{margin-bottom:20px; position:relative; z-index:999999;}
+    #gnb .depth1:after{content:''; display:block; clear:both;}
+    #gnb .depth1 > li{float:left; width:20%;} /*!자손선택자. 바로 아래의 자식들에게만 적용한다.!*/
+    #gnb .depth1 > li > a{
+        display:block; text-align:center;
+        font-size:1.5rem; font-weight:500;
+     line-height:2.75em; font-weight:bold;
+     border-bottom:5px solid transparent;
+        } /*depth1의 친자식인 li의 친자식인 a에게만 적용. line-height대신 패딩 줘도 괜찮음*/
+    #gnb .depth1 > li > a:hover{border-bottom-color:#ffdb01;}
+
+    #gnb .depth1 .depth2{
+        width:1200px; margin:0 auto; position:relative;
+        background-color:#fff;
+        padding:20px; box-sizing: border-box;
+        }
+    #gnb .nav_box{
+        background-color:#fff; position:absolute;
+        border-top:1px solid #ddd;
+        width:100%; top:70px; left:0; opacity:0; height:0; overflow:hidden;
+        transition:opacity 0.5s, height 0.3s;
+    }
+    #gnb .depth1 .depth2 > li{
+        float:left;
+        line-height: 3em; box-sizing:border-box; 
+        }
+     #gnb .depth1 .depth2 > li:first-child{width:20%; 
+     padding-top:20px; padding-left:30px;}
+     #gnb .depth1 .depth2 > li:nth-child(2){width:25%;
+     padding-top:20px;}
+     #gnb .depth1 .depth2 > li:last-child{width:50%;
+      padding:20px 40px;}
+      #gnb .depth1 .depth2 > li:last-child a{display:block;}
+      #gnb .depth1 .depth2 > li:last-child a img{width:100%;}
+     #gnb .depth3 li{font-size:1.25rem;}
+     #gnb .depth3 li:hover{color:#0057a4; }
+    #gnb .depth1 .depth2:after{content:''; display:block; clear:both;}
+    #gnb .depth1 > li:hover .nav_box{opacity:1; height:auto;}
+
+/*안쪽선*/
+#gnb .depth2 > li:nth-child(2):after{
+     content:''; display:block; height:100%; border-left:1px solid #ddd;
+     position:absolute; top:0; left:45%;
+}
+#gnb .sub_link{color:#0057a4; font-weight:700;}
+#gnb .service{color:#0057a4;}
+/*********************section****************************/
+#mini_slide{margin-bottom:210px;}
+#mini_slide inner:after{content:''; display:block; clear:both;}
+#mini_slide:after{content:''; display:block; clear:both;}
+#mini_slide .slide_title{width:calc((100% - 30px) / 3); float:left; margin-right:30px; height:300px; /*background-color:yellowgreen;*/}
+#mini_slide .slide_title h2{margin-bottom:10px;}
+#mini_slide .slide_title h3{margin-bottom:180px;}
+#mini_slide .slide_cont{width:calc((100% - 30px) / 3 * 2); float:left; height:300px;}
+#mini_slide .btn_more:hover{color:#fff; background-color:#333;} 
+
+
+
+#suggest{margin-bottom:130px;}
+#suggest h2{text-align:center; margin-bottom:60px;}
+#suggest ul{margin-bottom:100px;}
+#suggest ul li{
+     float:left; width:calc((100% - 75px) / 4); margin-right:25px;
+     box-sizing:border-box; 
+     }
+#suggest ul li:last-child{margin-right:0;}
+#suggest li a{display:block; height:280px; overflow:hidden; margin-bottom:20px;}
+#suggest ul li:hover img{transform:scale(1.5);}
+#suggest li img{width:100%; transition:1s;}
+#suggest ul:after{content:''; display:block; clear:both;}
+#suggest .sug_txt{font-size:1.25rem; line-height:1.3em; margin-bottom:10px;}
+#suggest .sug_txt span{font-weight:700;}
+#suggest .sug_price{font-size:1.562rem; font-weight:700;}
+#suggest .sug_btn{text-align:center;}
+#suggest .sug_btn .btn_more:hover{color:#fff; background-color:#333;} 
+/*btn_more = inline-block 인라인 블럭을 가운데 정렬할때는 부모 요소에게 text-align:center를 준다*/
+
+
+
+
+.cont{padding:120px 0; background-color:#fffad9; margin-bottom:130px;}
+
+#tip{margin-bottom:180px;}
+#tip:after{content:''; display:block; clear:both;}
+#tip h2{text-align:center; margin-bottom:60px;}
+#tip img{width:100%;}
+#tip .tip_left{float:left; width:50%; position:relative;}
+#tip .tip_right{float:right; width:50%;}
+#tip .tip_right li{float:left; width:50%;}
+#tip .caption{
+    background-color:rgba(0,87,164,0.8); text-align:center;
+    color:#fff;
+}
+#tip .caption .cap_txt{font-weight:500; line-height:1.3em;}
+#tip .caption .btn_more{color:#fff; border-color:#fff; background-color:transparent;}
+#tip .tip_left .caption{
+    width:100%; position:absolute; height:0; bottom:0;
+    opacity:0; transition:0.7s;
+}
+#tip .tip_left .cap_txt{
+    font-size:2.25rem; margin-top:200px; margin-bottom:30px;
+}
+#tip .tip_left .btn_more{font-size:1.5rem;}
+#tip .tip_left:hover .caption{opacity:1; height:600px;}
+#tip .tip_right li{position:relative;}
+#tip .tip_right .caption{
+    position:absolute; width:100%; height:0; opacity:0; bottom:0;
+    transition:0.7s;
+}
+#tip .tip_right .cap_txt{
+    font-size:1.5rem; margin-top:90px; margin-bottom:20px;
+}
+#tip .tip_right .btn_more{font-size:1.125rem; padding:10px 20px;
+}
+#tip .tip_right li:hover .caption{opacity:1; height:300px;}
+
+
+
+
+#ani_box h2{text-align:center; margin-bottom:60px;}
+#ani_box ul:after{content:''; display:block; clear:both;}
+#ani_box li{
+    float:left; box-sizing:border-box; width:calc((100% - 60px)/3);
+    border:1px solid #aaa; text-align:center; padding:60px 0;
+    margin-right:30px; position:relative; transition:2.8s;
+    }
+#ani_box li:hover{border-color:transparent;}
+#ani_box li:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+#ani_box li:hover:before, #ani_box li:focus:before {
+    border-color: #00853e;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    transition: width .4s, height .4s .4s; }
+#ani_box .inner li:after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+#ani_box li:hover:after, #ani_box li:focus:after {
+    border-color: #00853e;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    transition: width .4s .8s, height .4s 1.2s, border-color .1s .8s  }
+#ani_box li img{margin-bottom:50px;}
+#ani_box li p{font-size:2.5rem; font-weight:700; margin-bottom:30px;}
+#ani_box li:hover p{color:#00853e;}
+#ani_box li a{
+    font-size:1.25rem; position:relative; z-index:99999;
+    }
+/* 트랜지션 이후 작동X - before, after가 a 위로 올라와서. position relative 주고
+z-index를 줘서 해결*/
+#ani_box li:hover a{border-bottom:1px solid #333; padding-bottom:5px;}
+#ani_box li:last-child{margin-right:0;}
+
+
+
+
+
+
+#sns{text-align:center;}
+#sns h2{margin-bottom:10px;}
+#sns h3{margin-bottom:50px;}
+#sns .sns_video{position:relative;}
+#sns .sns_video:hover .btn_play{background-image:url(../images/btn_play_on.png);}
+#sns .sns_video img{width:100%;}
+#sns .btn_play{
+    background-image:url(../images/btn_play.png); background-repeat:no-repeat;
+    background-position:center; width:100px; height:100px; position:absolute;
+    border:none; background-color:transparent; top:calc(50% - 50px); left:calc(50% - 50px); z-index:99999;
+}
+
+/*********************footer****************************/
+#footer{background-color:#ddd; padding:50px 0; font-size:0.875rem;}
+#footer:after{content:''; display:block; clear:both;}
+#footer .f_left{float:left;}
+#footer .f_left .f_menu{margin-bottom:30px;}
+#footer .f_left .f_menu:after{content:''; display:block; clear:both;}
+#footer .f_left .f_menu a{
+    margin-right:20px; font-weight:700; display:block; float:left;
+    margin-top:10px;
+    }
+#footer .f_info p{color:#555; line-height:1.8em;}
+#footer .f_info p a:hover{text-decoration:underline;}
+#footer .f_info .copy{margin-top:40px;}
+
+#footer .f_right{float:right;}
+#footer .f_right:after{content:''; display:block; clear:both;}
+#footer .f_right .f_ico a{float:left; margin-left:10px; margin-bottom:90px;}
+#footer .f_right h1{float:right;}
+/*
+#footer .f_menu .f_m_right a{margin-left:10px;}
+#footer .f_menu:after{content:''; display:block; clear:both;}
+*/
+
+
+/***************************제이쿼리 디자인**************************/
+.vertical-center{width:500px; height:40px; overflow:hidden;}
+.vertical-center .slick-slide a{display:block; line-height:70px;}
+/* ↑ 공지사항 부분 - 높이를 수동으로 주고 빠져나오는 부분은 오버플로우로 안보이게함. 그래도 보이는 부분은 여백을 조정해줌. 가로 사이즈가 커서 유틸부분이 밀려내려가서 가로도 사이즈를 줬음.*/
+
+.lazy{margin-bottom:130px;}
+.lazy .slick-slide img{width:100%;}
+.lazy .slick-arrow{
+     position:absolute; top:calc(50% - (119px / 2)); width:46px; height:119px;
+     background-color:transparent; border:none; outline:none;
+     z-index:99999; text-indent:-9999999999px;
+     }
+.lazy .slick-prev{left:50px; background-image:url(../images/prev.png);}
+.lazy .slick-next{right:50px; background-image:url(../images/next.png);}
+
+.lazy .slick-dots{
+     position:absolute; left:0; bottom:30px; /*left:calc(50% - 60px);*/
+     text-align:center; width:100%; /*플롯 없이 인라인 블럭으로 가운데정렬하기*/
+     }
+.lazy .slick-dots li{display:inline-block; margin:0 5px;}
+.lazy .slick-dots li button{
+     width:15px; height:15px; border-radius:50%;
+     background-color:rgba(255,255,255,0.5); border:none; outline:none;
+     z-index:99999; text-indent:-9999999999px;
+}
+.lazy .slick-dots li.slick-active button{background-color:rgba(255,255,255,1);}
+
+.regular{width:1000px; margin-top:80px;}
+.regular .slick-arrow{
+     position:absolute; top:100px; width:50px; height:50px;
+     border:2px solid #0057a4; outline:none; background-color:#fff;
+     background-repeat:no-repeat; background-position:center;
+     text-indent:-9999999999px; z-index:99999; transition:0.3s;
+     }
+.regular .slick-prev{background-image:url(../images/btn_prev01.png); left:-420px;}
+.regular .slick-next{background-image:url(../images/btn_next01.png); left:-360px;}
+.regular .slick-arrow:hover{border-color:transparent; background-color:#0057a4;}
+.regular .slick-prev:hover{background-image:url(../images/btn_prev02.png);}
+.regular .slick-next:hover{background-image:url(../images/btn_next02.png);}
+
+.regular .slick-slide{
+     position:relative;
+     }
+.regular .caption{
+     text-align:center; background-color:rgba(0,0,0,0.5); color:#fff;
+     width:calc(100% - 35px); position:absolute; height:auto; padding:101px 0;
+     opacity:0; transition:opacity 0.5s;
+     }
+.regular a {display:block;}
+/*전체적으로 링크 걸고싶을때는 a를 맨 바깥에 놓고 display block*/
+.regular .caption .cap_txt{font-size:1.25rem; line-height:1.3em; margin-bottom:10px;}
+.regular .caption .cap_txt span{font-weight:700;}
+.regular .caption .cap_price{font-size:1.562rem; font-weight:700;}
+.regular .slick-slide:hover .caption{opacity:1;}

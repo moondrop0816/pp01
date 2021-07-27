@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"> <!--웹표준 문자설정-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <!--엣지 기본속성 제거-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> <!--해상도 조절-->
+    <!--검색엔진 최적화-->
+    <meta name="포트폴리오무비플로어" content="포트폴리오용으로 제작한 사이트입니다.">
+    <meta name="Keywords" content="포트폴리오용 웹사이트 제작">
+    <meta name="author" content="박혜원">
+    <title>포트폴리오 무비플로어 : 스크랩북</title> 
+      <!--[if lt IE 9]>
+          <script src="js/html5.js"></script>
+      <![endif]--> <!--실행은 됨. 브라우저 출력방지.-->
+    <link href="css/common.css" rel="stylesheet" type="text/css"> <!--공통디자인-->
+    <link href="css/sub01.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script> <!--자바스크립트-->
+    <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>  
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/sub01.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <nav id="gnb_mobile">
+            <div class="LeftWrap">
+              <button href="#" class="close1 sound_only">닫기</button>
+              <div id="wrap_head">
+                <div class="nav_profile">
+                  <p class="user_img"><img src="images/nav_profile.png" alt="프로필 이미지"></p>
+                  <p class="user_name">박혜원</p>
+                  <button class="btn_logout sound_only">로그아웃</button>
+                </div>
+                <ul id="btn1">
+                  <li class="depth1 movie"><a href="#" class="nav_under">영화</a>
+                      <ul class="sub">
+                        <li><a href="#">예매하기</a></li>
+                        <li><a href="#">추천영화</a></li>
+                        <li><a href="#">현재 상영작</a></li>
+                        <li><a href="#">맞춤작 추천</a></li>
+                        <li><a href="#">개봉예정작</a></li>
+                        <li><a href="#">무비플로어 특별관</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1"><a href="#">매거진</a></li>
+                  <li class="depth1 commu"><a href="#" class="nav_under">커뮤니티</a>
+                      <ul class="sub">
+                        <li><a href="#">컬렉션</a></li>
+                        <li><a href="#">리뷰</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1 event"><a href="#" class="nav_under">이벤트</a>
+                      <ul class="sub">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">시사회</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1"><a href="sub01.html">스크랩북</a></li>
+                </ul>
+              </div>
+          </div>
+          </nav> <!-- gnb_mobile end-->
+      <header id="header">
+        <div class="header_box">
+          <div class="h_top">
+            <div class="nav_btn">
+              <button href="#" class="open1">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <h1 id="logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="무비플로어 로고">
+              </a>
+            </h1>
+            <nav id="gnb">
+              <div class="nav_box">
+                <ul class="depth1">
+                    <li><a href="#" class="nav_under">영화</a>
+                      <ul class="depth2 movie">
+                          <li class="dep2_left">
+                            <ul>
+                              <li><a href="#">예매하기</a></li>
+                              <li><a href="#">현재 상영작</a></li>
+                              <li><a href="#">개봉예정작</a></li>
+                            </ul>
+                          </li>
+                          <li class="dep2_right">
+                            <ul>
+                              <li><a href="#">추천영화</a></li>
+                              <li><a href="#">맞춤작 추천</a></li>
+                              <li><a href="#">무비플로어 특별관</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">매거진</a></li>
+                    <li><a href="#" class="nav_under">커뮤니티</a>
+                        <ul class="depth2 no2 commu">
+                            <li><a href="#">컬렉션</a></li>
+                            <li><a href="#">리뷰</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav_under">이벤트</a>
+                        <ul class="depth2 no2 event">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">시사회</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub01.html" class="sub_link">스크랩북</a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="util">
+              <button class="btn_alert sound_only">알림</button>
+              <button class="btn_login sound_only">로그인</button>
+              <button class="btn_search sound_only">검색</button>
+            </div>
+          </div>
+        </div>
+        <div class="sub_visual">
+          <img src="images/sub_img/sub_visual01-1.jpg" alt="스크랩북">
+          <h2>스크랩북</h2>
+        </div>
+      </header>
+      <nav id="lnb">
+        <div class="nav_box">
+          <div class="inner">
+          <ul class="depth1">
+            <li><a href="index.html"></a></li>
+            <li><a href="#">스크랩북</a>
+              <ul class="depth2">
+                <li><a href="#">영화</a></li>
+                <li><a href="#">매거진</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#" class="on">스크랩북</a></li>
+              </ul>
+            </li>
+            <li><a href="#">보관함</a>
+              <ul class="depth2">
+                <li><a href="#" class="on">보관함</a></li>
+                <li><a href="#">예매내역</a></li>
+                <li><a href="#">알림</a></li>
+                <li><a href="#">취향분석</a></li>
+                <li><a href="#">나의 컬렉션</a></li>
+                <li><a href="sub03.html">나의 리뷰</a></li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="scrapbook">
+        <section class="personal">
+          <article class="per_top">
+            <div class="inner">
+              <div class="buttons">
+                <button class="sound_only btn_setting">설정</button>
+                <button class="sound_only btn_logout">로그아웃</button>
+              </div>
+              <div class="profile">
+                <p class="profile_img">
+                  <img src="images/sub_img/profile.png" alt="프로필이미지">
+                </p>
+                <div class="profile_info">
+                  <p class="name">박혜원</p>
+                  <div class="follow">
+                    <a href="#"><p>팔로잉 <span>21</span></p></a>
+                    <a href="#"><p>팔로워 <span>39</span></p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="my_record">
+                <p><a href="#">
+                  <span class="num">340</span>
+                  <span class="tit">본 영화</span>
+                </a></p>
+                <p><a href="#">
+                  <span class="num">52</span>
+                  <span class="tit">보고싶어요</span>
+                </a></p>
+                <p><a href="#">
+                  <span class="num">26</span>
+                  <span class="tit">좋아한<br>컬렉션</span>
+                </a></p>
+                <p><a href="#">
+                  <span class="num">17</span>
+                  <span class="tit">좋아한<br>리뷰</span>
+                </a></p>
+              </div>
+            </div>
+          </article>
+          <article class="per_bot">
+            <div class="inner">
+              <div class="ticket">
+                <p class="tit">예매</p>
+                <p class="t_cont">
+                  <a href="#">
+                    <span class="movie_name">루카</span>
+                    <span class="movie_location">롯데시네마 부산본점</span>
+                    <span class="movie_time">18:10 ~ 19:55</span>
+                  </a>
+                </p>
+              </div>
+              <div class="like_chart">
+                <div class="genre">
+                  <p class="tit">선호장르</p>
+                  <div class="chart">
+                    <p class="name">판타지</p>
+                    <p class="bar"><span class="no1"></span></p>
+                    <p class="percent">37%</p>
+                  </div>
+                  <div class="chart">
+                    <p class="name">스릴러</p>
+                    <p class="bar"><span class="no2"></span></p>
+                    <p class="percent">33%</p>
+                  </div>
+                  <div class="chart">
+                    <p class="name">코미디</p>
+                    <p class="bar"><span class="no3"></span></p>
+                    <p class="percent">20%</p>
+                  </div>
+                </div>
+                <div class="keyword">
+                  <p class="tit">선호 키워드</p>
+                  <a href="#">#블록버스터</a>
+                  <a href="#">#화려한</a>
+                  <a href="#">#웃긴</a>
+                  <a href="#">#귀여운</a>
+                  <a href="#">#마법</a>
+                </div>
+              </div>
+              <div class="suggest">
+                <p class="tit">박혜원님을 위한 추천 영화</p>
+                <div class="sug_cont">
+                  <a href="#">
+                    <p class="sug_img"><img src="images/sub_img/sug_01.jpg" alt="곡성"></p>
+                    <p class="sug_txt">
+                      <span>곡성</span><br>
+                      재밌게 보신 <불신지옥>과 비슷해요
+                    </p>
+                  </a>
+                </div>
+                <div class="sug_cont">
+                  <a href="#">
+                    <p class="sug_img"><img src="images/sub_img/sug_02.jpg" alt="킬러의 보디가드 2"></p>
+                    <p class="sug_txt">
+                      <span>킬러의 보디가드 2</span><br>
+                      <데드풀> 라이언 레이놀즈 배우의 작품
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="icon">
+          <div class="inner">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="images/sub_img/ico_arlert.png" alt="알림">
+                <p>알림</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/sub_img/ico_chart.png" alt="취향분석">
+                <p>취향분석</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/sub_img/ico_collect.png" alt="나의 컬렉션">
+                <p>나의 컬렉션</p>
+              </a>
+            </li>
+            <li>
+              <a href="sub03.html">
+                <img src="images/sub_img/ico_review.png" alt="나의 리뷰">
+            <p>나의 리뷰</p>
+              </a>
+            </li>
+          </ul>
+          </div>
+        </section>
+        <section class="list">
+          <div class="inner">
+            <h3>예매내역</h3>
+            <div class="list_top">
+              <div class="select">
+                <p>기간선택</p>
+                <button>3개월</button>
+                <button>6개월</button>
+                <button>1년</button>
+              </div>
+              <div class="period">
+                <div class="calender1">2021 - 05 - 20</div>
+                <p>-</p>
+                <div class="calender2">2021 - 06 - 20</div>
+                <button>조회</button>
+              </div>
+            </div>
+            <div class="list_bot">
+              <table>
+                <tr>
+                  <th>구분</th>
+                  <th>일자</th>
+                  <th>위치</th>
+                  <th>제목</th>
+                  <th>리뷰</th>
+                </tr>
+                <tr>
+                  <td>관람 전</td>
+                  <td>2021-06-20</td>
+                  <td>롯데시네마 부산 본점</td>
+                  <td>루카</td>
+                  <td><a href="sub02.html" class="undone">작성하기</a></td>
+                </tr>
+                <tr>
+                  <td>관람 후</td>
+                  <td>2021-06-12</td>
+                  <td>CGV 서면</td>
+                  <td>컨저링 3 : 악마가 시켰다</td>
+                  <td><a href="#">작성완료</a></td>
+                </tr>
+                <tr>
+                  <td>관람 후</td>
+                  <td>2021-05-28</td>
+                  <td>메가박스 부산극장</td>
+                  <td>크루엘라</td>
+                  <td><a href="#">작성완료</a></td>
+                </tr>
+                <tr>
+                  <td>관람 후</td>
+                  <td>2021-05-17</td>
+                  <td>롯데시네마 사상</td>
+                  <td>빅 피쉬</td>
+                  <td><a href="#">작성완료</a></td>
+                </tr>
+                <tr>
+                  <td>관람 후</td>
+                  <td>2021-05-09</td>
+                  <td>CGV 서면</td>
+                  <td>해리 포터와 아즈카반의 죄수</td>
+                  <td><a href="#">작성완료</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer id="footer">
+          <div class="notice">
+            <div class="inner">
+              <p>공지사항</p>
+              <section class="vertical-center slider">
+                <div>
+                  <a href="#"><span class="tit">[알림] CGV 극장 시스템 점검 안내 (06/15, 06/22)</span><span class="date">2021-05-27</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] <기적> 시사회 취소 관련</span><span class="date">2021-05-11</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] <스파이럴> 시사회 취소 관련</span><span class="date">2021-05-04</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] 무비플로어 시스템 점검 안내 (05/11)</span><span class="date">2021-05-03</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] 롯데시네마 극장 시스템 점검 안내 (05/04)</span><span class="date">2021-04-28</span></a>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="inner">
+            <div class="f_left">
+              <p class="f_menu">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#" class="bold">청소년보호정책</a>
+              </p>
+              <p class="f_info">
+                무비플로어<br>
+                주소시 주소구 주소로 123 주소빌딩 5층<br>
+                사업자등록번호 123-45-67890 <a href="#">사업자정보확인</a><br>
+                대표자 : 박혜원<br>
+                movpledesk@movieplore.com
+              </p>
+              <p class="f_copy">Copyright 2021. Movieplore All rights reserved.</p>
+              <p class="announce">본 웹사이트는 포트폴리오용으로 제작되었습니다.</p>
+            </div>
+            <div class="f_right">
+              <a href="#"><img src="images/ico_facebook.png" alt="무비플로어 페이스북"></a>
+              <a href="#"><img src="images/ico_instagram.png" alt="무비플로어 인스타그램"></a>
+              <a href="#"><img src="images/ico_youtube.png" alt="무비플로어 유튜브"></a>
+            </div>
+          </div>
+      </footer>
+    </div>
+  </body>
+
+</html>

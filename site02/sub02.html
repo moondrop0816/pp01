@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"> <!--웹표준 문자설정-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <!--엣지 기본속성 제거-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> <!--해상도 조절-->
+    <!--검색엔진 최적화-->
+    <meta name="포트폴리오무비플로어" content="포트폴리오용으로 제작한 사이트입니다.">
+    <meta name="Keywords" content="포트폴리오용 웹사이트 제작">
+    <meta name="author" content="박혜원">
+    <title>포트폴리오 무비플로어 : 리뷰작성</title> 
+      <!--[if lt IE 9]>
+          <script src="js/html5.js"></script>
+      <![endif]--> <!--실행은 됨. 브라우저 출력방지.-->
+    <link href="css/common.css" rel="stylesheet" type="text/css"> <!--공통디자인-->
+    <link href="css/sub02.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script> <!--자바스크립트-->
+    <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>  
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/sub02.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <nav id="gnb_mobile">
+            <div class="LeftWrap">
+              <button href="#" class="close1 sound_only">닫기</button>
+              <div id="wrap_head">
+                <div class="nav_profile">
+                  <p class="user_img"><img src="images/nav_profile.png" alt="프로필 이미지"></p>
+                  <p class="user_name">박혜원</p>
+                  <button class="btn_logout sound_only">로그아웃</button>
+                </div>
+                <ul id="btn1">
+                  <li class="depth1 movie"><a href="#" class="nav_under">영화</a>
+                      <ul class="sub">
+                        <li><a href="#">예매하기</a></li>
+                        <li><a href="#">추천영화</a></li>
+                        <li><a href="#">현재 상영작</a></li>
+                        <li><a href="#">맞춤작 추천</a></li>
+                        <li><a href="#">개봉예정작</a></li>
+                        <li><a href="#">무비플로어 특별관</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1"><a href="#">매거진</a></li>
+                  <li class="depth1 commu"><a href="#" class="nav_under">커뮤니티</a>
+                      <ul class="sub">
+                        <li><a href="#">컬렉션</a></li>
+                        <li><a href="#">리뷰</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1 event"><a href="#" class="nav_under">이벤트</a>
+                      <ul class="sub">
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">시사회</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                      </ul>
+                  </li>
+                  <li class="depth1"><a href="sub01.html">스크랩북</a></li>
+                </ul>
+              </div>
+          </div>
+          </nav> <!-- gnb_mobile end-->
+      <header id="header">
+        <div class="header_box">
+          <div class="h_top">
+            <div class="nav_btn">
+              <button href="#" class="open1">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <h1 id="logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="무비플로어 로고">
+              </a>
+            </h1>
+            <nav id="gnb">
+              <div class="nav_box">
+                <ul class="depth1">
+                    <li><a href="#" class="nav_under">영화</a>
+                      <ul class="depth2 movie">
+                          <li class="dep2_left">
+                            <ul>
+                              <li><a href="#">예매하기</a></li>
+                              <li><a href="#">현재 상영작</a></li>
+                              <li><a href="#">개봉예정작</a></li>
+                            </ul>
+                          </li>
+                          <li class="dep2_right">
+                            <ul>
+                              <li><a href="#">추천영화</a></li>
+                              <li><a href="#">맞춤작 추천</a></li>
+                              <li><a href="#">무비플로어 특별관</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">매거진</a></li>
+                    <li><a href="#" class="nav_under">커뮤니티</a>
+                        <ul class="depth2 no2 commu">
+                            <li><a href="#">컬렉션</a></li>
+                            <li><a href="#">리뷰</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav_under">이벤트</a>
+                        <ul class="depth2 no2 event">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">시사회</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub01.html" class="sub_link">스크랩북</a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="util">
+              <button class="btn_alert sound_only">알림</button>
+              <button class="btn_login sound_only">로그인</button>
+              <button class="btn_search sound_only">검색</button>
+            </div>
+          </div>
+        </div>
+        <div class="sub_visual">
+          <img src="images/sub_img/sub_visual02.jpg" alt="리뷰작성">
+          <h2>나의 리뷰</h2>
+        </div>
+      </header>
+      <nav id="lnb">
+        <div class="nav_box">
+          <div class="inner">
+          <ul class="depth1">
+            <li><a href="index.html"></a></li>
+            <li><a href="#">스크랩북</a>
+              <ul class="depth2">
+                <li><a href="#">영화</a></li>
+                <li><a href="#">매거진</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="sub01.html" class="on">스크랩북</a></li>
+              </ul>
+            </li>
+            <li><a href="#">나의 리뷰</a>
+              <ul class="depth2">
+                <li><a href="sub01.html">보관함</a></li>
+                <li><a href="#">예매내역</a></li>
+                <li><a href="#">알림</a></li>
+                <li><a href="#">취향분석</a></li>
+                <li><a href="#">나의 컬렉션</a></li>
+                <li><a href="sub03.html" class="on">나의 리뷰</a></li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="review_edit">
+        <div class="inner">
+          <h3>리뷰 작성하기</h3>
+        </div>
+        <article class="movie_info">
+          <div class="inner">
+            <div class="cont">
+              <p class="cont_top">
+                <span class="tit">루카</span>
+                <span class="eng_tit">Luca</span>
+                <span class="txt">2021 · 전체 관람가 · 애니메이션, 코미디, 가족, 판타지</span>
+              </p>
+              <p class="cont_mid">
+                <span class="sub_tit">감독 / 출연</span>
+                <span class="txt">엔리코 카사로사 / 제이콥 트렘블레이, 잭 딜런 그레이저, 엠마 버만</span>
+              </p>
+              <p class="cont_bot">
+                <span class="sub_tit">소개</span>
+                <span class="txt">이탈리아 리비에라의 아름다운 해변 마을, 바다 밖 세상이 궁금하지만, 두렵기도 한 호기심 많은 소년 '루카' 자칭 인간세상 전문가 ‘알베르토’와 함께 모험을 감행하지만, 물만 닿으면 바다 괴물로 변신하는 비밀 때문에 아슬아슬하기만 하다. 새로운 친구 ‘줄리아’와 함께 젤라또와 파스타를 실컷 먹고 스쿠터 여행을 꿈꾸는 여름은 그저 즐겁기만 한데… 과연 이들은 언제까지 비밀을 감출 수 있을까? 함께라서 행복한 여름, 우리들의 잊지 못할 모험이 시작된다!</span>
+              </p>
+            </div>
+            <div class="poster">
+              <img src="images/sub_img/sub_02poster.jpg" alt="루카">
+            </div>
+          </div>
+        </article>
+        <article class="review_form">
+          <div class="inner">
+            <form class="review_cont">
+              <div class="rating">
+                <p class="tit">평점</p>
+                <div class="stars">
+                  <button class="sound_only score">1점</button>
+                  <button class="sound_only score">2점</button>
+                  <button class="sound_only score">3점</button>
+                  <button class="sound_only score">4점</button>
+                  <button class="sound_only score">5점</button>
+                </div>
+              </div> <!--rating end-->
+              <div class="keywords">
+                <p class="tit">키워드</p>
+                <input type="text" id="keywords" class="keywords_txt">
+                <div class="key_block">
+                  <button class="no1">#픽사</button>
+                  <button class="no2">#귀여운</button>
+                  <button class="no3">#감동적인</button>
+                </div>
+                  </div> <!--keywords end-->
+              <div class="text">
+                <textarea placeholder="내용을 입력해 주세요."></textarea>
+              </div> <!--text end-->
+              <div class="photo">
+                <p class="tit">사진 첨부(선택)</p>
+                  <a href="#">
+                    <p class="upload">
+                      <img src="images/sub_img/camera.png" alt="사진첨부">
+                      <span class="up_tit">사진 올리기</span>
+                      <span>리뷰와 함께 올릴<br> 사진을 선택해주세요.<br>(최대 1장)</span>
+                    </p>
+                  </a>
+              </div> <!--photo end-->
+              <div class="buttons">
+                <a href="sub03.html" class="btn_reset">취소</a>
+                <a href="sub03.html" class="btn_edit">글쓰기</a>
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+      <footer id="footer">
+          <div class="notice">
+            <div class="inner">
+              <p>공지사항</p>
+              <section class="vertical-center slider">
+                <div>
+                  <a href="#"><span class="tit">[알림] CGV 극장 시스템 점검 안내 (06/15, 06/22)</span><span class="date">2021-05-27</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] <기적> 시사회 취소 관련</span><span class="date">2021-05-11</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] <스파이럴> 시사회 취소 관련</span><span class="date">2021-05-04</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] 무비플로어 시스템 점검 안내 (05/11)</span><span class="date">2021-05-03</span></a>
+                </div>
+                <div>
+                  <a href="#"><span class="tit">[알림] 롯데시네마 극장 시스템 점검 안내 (05/04)</span><span class="date">2021-04-28</span></a>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="inner">
+            <div class="f_left">
+              <p class="f_menu">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#" class="bold">청소년보호정책</a>
+              </p>
+              <p class="f_info">
+                무비플로어<br>
+                주소시 주소구 주소로 123 주소빌딩 5층<br>
+                사업자등록번호 123-45-67890 <a href="#">사업자정보확인</a><br>
+                대표자 : 박혜원<br>
+                movpledesk@movieplore.com
+              </p>
+              <p class="f_copy">Copyright 2021. Movieplore All rights reserved.</p>
+              <p class="announce">본 웹사이트는 포트폴리오용으로 제작되었습니다.</p>
+            </div>
+            <div class="f_right">
+              <a href="#"><img src="images/ico_facebook.png" alt="무비플로어 페이스북"></a>
+              <a href="#"><img src="images/ico_instagram.png" alt="무비플로어 인스타그램"></a>
+              <a href="#"><img src="images/ico_youtube.png" alt="무비플로어 유튜브"></a>
+            </div>
+          </div>
+      </footer>
+    </div>
+  </body>
+
+</html>

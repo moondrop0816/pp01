@@ -1,0 +1,233 @@
+.inner{width:1200px; margin:0 auto;}
+/*1200이하여도 스크롤 생기지 않게*/
+#wrap{width:100%; min-width:1200px; overflow:hidden;} /*반응형은 쓰면 안됨*/
+
+button{cursor:pointer;}
+.btn_more{
+     display:inline-block; 
+     background-color:#fff; border:1px solid #999; padding:15px 30px;
+     color:#555; font-size:1.25rem; font-weight:700;}
+
+
+/*********************header****************************/
+
+#header .logo{text-align:center; margin-bottom:60px;}
+/*#header #gnb{float:left; margin-left:100px;}*/
+#header .h_top{margin-top:50px;}
+#header .h_top .notice{
+     float:left; background-image:url(../images/ico_notice2.png);
+     background-repeat:no-repeat; background-position:left top;
+     padding-left:40px;
+     }
+#header .h_top:after{content:''; display:block; clear:both;}
+#header .top{float:right; position:relative;}
+#header .top button{width:30px; height:30px; border:none; background:none; outline:none; cursor:pointer; margin-right:10px;}
+#header .top button.user{
+     background:url(../images/ico_user.png) no-repeat center;
+     }
+#header .top button.user.on{background-image:url(../images/ico_user.png);}
+/*user에 on이 붙으면 배경그림을 바꾼다*/
+#header .top button.cart{
+     background:url(../images/ico_cart.png) no-repeat center;
+     }
+#header .top button.cart.on{background-image:url(../images/ico_cart.png);}
+#header .top button.search{
+     background:url(../images/ico_search01.png) no-repeat center;
+     margin-right:0;
+     }
+#header .top button.search.on{background-image:url(../images/ico_close.png);}
+
+#header .top div.search_box{
+     width:300px; height:75px; position:absolute; right:0; top:40px;
+     background-color:#eee; padding:22px 20px; box-sizing:border-box;
+     display:none;
+     }
+#header .top div.search_box:after{content:''; display:block; clear:both;}
+#header .top div.search_box label{float:left;}
+#header .top div.search_box .txt_search{
+     float:left; outline:0; border:2px solid #aaa; padding-left:10px;
+     width:224px; height:30px; box-sizing:border-box; margin-right:5px;
+     }
+#header .top div.search_box .txt_search::placeholder{color:#aaa; font-size:0.875rem;}
+#header .top div.search_box .btn_search{
+     float:left; background-image:url(../images/ico_search02.png);
+     background-color:#0057a4; background-repeat:no-repeat;
+     background-position:center; width:30px; height:30px;
+     margin-right:0;
+     }
+
+/* 네비4 - 메가네비100% 변형*/         
+  /*오버했을때 height:auto로 해보기*/
+    #gnb{margin-bottom:20px; position:relative; z-index:999999;}
+    #gnb .depth1:after{content:''; display:block; clear:both;}
+    #gnb .depth1 > li{float:left; width:20%;} /*!자손선택자. 바로 아래의 자식들에게만 적용한다.!*/
+    #gnb .depth1 > li > a{
+        display:block; text-align:center;
+        font-size:1.5rem; font-weight:500;
+     line-height:2.75em; font-weight:bold;
+     border-bottom:5px solid transparent;
+        } /*depth1의 친자식인 li의 친자식인 a에게만 적용. line-height대신 패딩 줘도 괜찮음*/
+    #gnb .depth1 > li > a:hover{border-bottom-color:#ffdb01;}
+
+    #gnb .depth1 .depth2{
+        width:1200px; margin:0 auto; position:relative;
+        background-color:#fff;
+        padding:20px; box-sizing: border-box;
+        }
+    #gnb .nav_box{
+        background-color:#fff; position:absolute;
+        border-top:1px solid #ddd;
+        width:100%; top:70px; left:0; opacity:0; height:0; overflow:hidden;
+        transition:opacity 0.5s, height 0.3s;
+    }
+    #gnb .depth1 .depth2 > li{
+        float:left;
+        line-height: 3em; box-sizing:border-box; 
+        }
+     #gnb .depth1 .depth2 > li:first-child{width:20%; 
+     padding-top:20px; padding-left:30px;}
+     #gnb .depth1 .depth2 > li:nth-child(2){width:25%;
+     padding-top:20px;}
+     #gnb .depth1 .depth2 > li:last-child{width:50%;
+      padding:20px 40px;}
+      #gnb .depth1 .depth2 > li:last-child a{display:block;}
+      #gnb .depth1 .depth2 > li:last-child a img{width:100%;}
+     #gnb .depth3 li{font-size:1.25rem;}
+     #gnb .depth3 li:hover{color:#0057a4; }
+    #gnb .depth1 .depth2:after{content:''; display:block; clear:both;}
+    #gnb .depth1 > li:hover .nav_box{opacity:1; height:auto;}
+
+/*안쪽선*/
+#gnb .depth2 > li:nth-child(2):after{
+     content:''; display:block; height:100%; border-left:1px solid #ddd;
+     position:absolute; top:0; left:45%;
+}
+#gnb .sub_link{color:#0057a4; font-weight:700;}
+#gnb .service{color:#0057a4;}
+/*********************section****************************/
+#planning .sub_visual{position:relative;}
+#planning .sub_visual img{width:100%;}
+#planning .sub_visual .sub_tit{
+    color:#fff; position:absolute; top:calc(50% - (114px / 2)); 
+    left:calc(50% - (488px / 2));
+    }
+#planning .sub_visual .sub_tit h2{
+    font-weight:700; font-size:3.125rem; margin-bottom:10px;
+    text-align:center;
+    }
+#planning .sub_visual .sub_tit h3{
+    font-weight:400; font-size:1.375rem; color:rgba(255,255,255,0.5);
+    text-align:center;
+    }
+
+
+
+
+#lnb{position:relative; top:calc((54px / 2) * -1); margin-bottom:100px;}
+#lnb .depth1{width:100%; }
+#lnb .depth1:after{content:''; display:block; clear:both;}
+#lnb .depth1 > li{
+    float:left; width:calc(100% / 3); position:relative;
+    background-color:#0057a4; box-sizing:border-box;
+    }
+#lnb .depth1 > li > a{
+    color:#fff; display:block;
+    border-right:1px solid #fff;
+    padding:15px 30px; box-sizing:border-box; width:100%; 
+}
+#lnb .depth1 > li:hover .depth2{opacity:1; height:auto;}
+#lnb .depth1 > li:first-child{
+    background-image:url(../images/ico_home.png); background-repeat:no-repeat;
+    background-position:20px center; padding-left:30px;
+}
+#lnb .depth1 > li:first-child > a{opacity:0.8;}
+#lnb .depth1 > li:nth-child(2){
+    background-image:url(../images/arr_down.png); background-repeat:no-repeat;
+    background-position:calc(100% - 20px) center;
+}
+#lnb .depth1 > li:nth-child(2) > a{opacity:0.8;}
+#lnb .depth1 > li:last-child{
+    border-right:none; background-image:url(../images/arr_down.png); 
+    background-repeat:no-repeat; font-weight:500;
+    background-position:calc(100% - 20px) center;
+    }
+#lnb .depth1 > li:nth-child(2):hover, #lnb .depth1 > li:last-child:hover{
+    background-image:url(../images/arr_up.png);
+}
+#lnb .depth1 .depth2{
+    border:1px solid #aaa; box-sizing:border-box; 
+    opacity:0; height:0; overflow:hidden; transition:0.5s;
+    position:absolute; background-color:#fff; width:100%; z-index:99999;
+}
+#lnb .depth1 .depth2 li a{
+    padding:15px 30px; display:block; font-weight:400;
+    }
+#lnb .depth1 .depth2 a.on{
+    background-color:rgba(0,87,164,0.5); font-weight:500; color:#fff;
+    }
+#lnb .depth1 .depth2 li a:hover{background-color:rgba(0,87,164,0.5);}
+
+
+
+
+
+.sub_cont h2{
+    font-size:1.875rem; font-weight:700; text-align:center;
+    background-repeat:no-repeat; background-position:center;
+    margin-bottom:50px;
+    }
+.sub_cont .s_planning h2{background-image:url(../images/tit_pattern01.png);}
+.sub_cont .s_planning h2 + p{margin-bottom:20px;}
+.sub_cont .s_planning h2 + p + p{margin-bottom:50px; line-height:1.375em;}
+.sub_cont .s_planning li{float:left; width:50%; margin-bottom:50px;}
+.sub_cont .s_planning img{width:100%;}
+.sub_cont .s_planning .list_txt{
+    line-height:1.25em; padding:35px 60px;
+}
+.sub_cont .s_planning .list_txt span{
+    font-weight:700; font-size:1.25rem; line-height:2em;
+}
+
+
+.sub_cont .how_to h2{
+    background-image:url(../images/tit_pattern02.png); clear:both;}
+.sub_cont .how_to .how_to_cont{margin:0 auto 60px; width:85%;}
+.sub_cont .how_to .how_to_cont img{width:100%; margin-bottom:50px;}
+.sub_cont .how_to .how_to_cont p{
+    line-height:1.875em; margin-left:20px;
+}
+.sub_cont .how_to .btn_reserve{
+    display:block; background-color:#333; color:#fff;
+    padding:25px 50px; font-size:1.5rem; font-weight:700;
+    margin:0 auto 100px; width:260px; transition:0.3s;
+    }
+.sub_cont .how_to .btn_reserve:hover{background-color:#0057a4;}
+
+
+
+
+
+/*********************footer****************************/
+#footer{background-color:#ddd; padding:50px 0; font-size:0.875rem;}
+#footer:after{content:''; display:block; clear:both;}
+#footer .f_left{float:left;}
+#footer .f_left .f_menu{margin-bottom:30px;}
+#footer .f_left .f_menu:after{content:''; display:block; clear:both;}
+#footer .f_left .f_menu a{
+    margin-right:20px; font-weight:700; display:block; float:left;
+    margin-top:10px;
+    }
+#footer .f_info p{color:#555; line-height:1.8em;}
+#footer .f_info p a:hover{text-decoration:underline;}
+#footer .f_info .copy{margin-top:40px;}
+
+#footer .f_right{float:right;}
+#footer .f_right:after{content:''; display:block; clear:both;}
+#footer .f_right .f_ico a{float:left; margin-left:10px; margin-bottom:90px;}
+#footer .f_right h1{float:right;}
+
+
+/***************************제이쿼리 디자인**************************/
+.vertical-center{width:500px; height:40px; overflow:hidden;}
+.vertical-center .slick-slide a{display:block; line-height:70px;}
+/*높이를 수동으로 주고 빠져나오는 부분은 오버플로우로 안보이게함. 그래도 보이는 부분은 여백을 조정해줌. 가로 사이즈가 커서 유틸부분이 밀려내려가서 가로도 사이즈를 줬음.*/
