@@ -516,7 +516,7 @@ a:hover, a:active, a:focus {
 
 .blog-post-image {
   padding-bottom: 18px;
-  width: 100%; 
+  width: 100%; overflow:hidden; border-radius:7px;
 }
 .blog-post-image img{width:100%;}
 
