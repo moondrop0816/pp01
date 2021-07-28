@@ -112,7 +112,7 @@ a:hover, a:active, a:focus {
 
 .section-title h3 {
   color: #555;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 4px;
 }
 
@@ -376,7 +376,7 @@ a:hover, a:active, a:focus {
   overflow: hidden;
   position: relative;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(178,219,143,0.3);
+  background-color: #def2b3;
   /*background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
   background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #3f95ea), color-stop(1, #52d3aa));*/
   /* Android 2.3 */
@@ -458,8 +458,10 @@ a:hover, a:active, a:focus {
 #fh5co-work .fh5co-project-item .fh5co-text h2 {
   font-size: 18px;
   font-weight: bold;
+  color:#555;
   margin: 0;
 }
+#fh5co-work .fh5co-project-item:hover h2{color:#472584;}
 #fh5co-work .fh5co-project-item .fh5co-text span {
   color: #b3b3b3;
   font-size: 16px;
@@ -494,6 +496,8 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 #blog:after{content:''; display:block; clear:both;}
 
+
+
 #blog .col-md-offset-1{width:100%; margin-left:0;}
 .blog-post-thumb {
   padding-top: 32px;
@@ -514,14 +518,15 @@ a:hover, a:active, a:focus {
   padding-bottom: 18px;
   width: 100%; 
 }
+.blog-post-image img{width:100%;}
 
 
 .blog-post-title a {
-  color: #555;
+  color: #555; font-weight:500;
 }
 
-.blog-post-title a:hover {
-  color: #000;
+.blog-post-thumb:hover h3 a {
+  color: #8344af;
 }
 
 .blog-post-des p{margin-bottom:0;}
@@ -537,20 +542,13 @@ a:hover, a:active, a:focus {
 }
 
 .blog-post-des .btn:hover {
-  background: #000;
+  background: #472584;
   border-color: transparent;
   color: #ffffff;
 }
 
 
 
-/*---------------------------------------
-   Blog Single Post section              
------------------------------------------*/
-
-#blog-single-post .blog-post-des h3 {
-  padding-top: 16px;
-}
 
 
 
