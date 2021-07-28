@@ -228,7 +228,7 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-nav > li a:hover {
-    color: #b2db8f !important;
+    color: #bba7fe !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -239,13 +239,13 @@ a:hover, a:active, a:focus {
 
 .navbar-default .navbar-nav li a:hover
  /*.navbar-default .navbar-nav .active > a*/ {
-    color: #b2db8f;
+    color: #bba7fe;
   }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #5d9564;
+    color: #8344af;
     background-color: transparent;
 }
 
@@ -299,7 +299,7 @@ a:hover, a:active, a:focus {
   }
 #about .left .personal_data a.phone{margin-right:0;}
 #about .left .personal_data a:hover{
-  color:#fff; background:#79ad63; border-color:transparent;
+  color:#fff; background:#472584; border-color:transparent;
   }
 
 /*#about .left .personal_data a.mail{float:left;}
@@ -376,7 +376,7 @@ a:hover, a:active, a:focus {
   overflow: hidden;
   position: relative;
   color: rgba(255, 255, 255, 0.8);
-  background-color: #f37d6b
+  background-color: rgba(178,219,143,0.3);
   /*background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
   background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #3f95ea), color-stop(1, #52d3aa));*/
   /* Android 2.3 */
@@ -524,7 +524,7 @@ a:hover, a:active, a:focus {
   color: #000;
 }
 
-
+.blog-post-des p{margin-bottom:0;}
 
 .blog-post-des .btn {
   border-radius: 100px;
