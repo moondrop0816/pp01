@@ -49,6 +49,17 @@ $(function(){
           a=1; 
       }
     })
+
+    $(window).resize(function(){
+      if ($(window).width() > 767){
+        $('.btn_all').hide();
+        $('.box').hide();
+        $('.btn_all').removeClass('on');
+        a = 0;
+      } else {
+        $('.btn_all').show();
+      }
+    });//resize
 })
 </script>
 
