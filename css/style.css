@@ -760,9 +760,13 @@ footer .footer-copyright {
 
   #about .left {
     float: none;
-    width: 60%;
-    margin:0 auto 80px;
+    width: 100%;
+    margin:0 auto 80px; text-align:center;
 }
+#about .left .profile img {
+    width: 60%;
+}
+
 #about .right {
     float: none;
     width: 100%;
@@ -780,15 +784,21 @@ footer .footer-copyright {
 
 
 .blog-post-thumb {
-    padding-top: 32px;
-    padding-bottom: 62px;
-    margin-bottom: 32px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 50px;
     float: left;
     width: calc((100% - 30px)/2);
     margin-right: 30px;
 }
 .blog-post-thumb:nth-child(3n) {
     margin-right: 0;
+}
+
+.blog-post-des p {
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; width:100%;
 }
 
 
