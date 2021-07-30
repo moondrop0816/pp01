@@ -23,6 +23,7 @@
 
 <!--!!제이쿼리 버전 넣었는지 확인!!-->
 <script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.js"></script>
 
 
 <!-- SCRIPTS -->
@@ -32,7 +33,24 @@
 <script src="js/custom.js"></script>
 
 
-
+<!--nav-->
+<script>
+$(function(){
+    var a = 1 
+    $('.btn_all').click(function(){
+       // $(this).toggleClass('on');
+      if(a==1) {
+           $(this).addClass('on');   
+           $('.box').fadeIn();
+           a=0; 
+      }else{
+          $(this).removeClass('on');
+          $('.box').fadeOut();
+          a=1; 
+      }
+    })
+})
+</script>
 
 
 </head>
@@ -55,6 +73,19 @@
      <div class="container">
 
           <div class="navbar-header">
+            <div class="btn_all">
+              <span></span>
+              <span></span>
+              <span></span>    
+            </div>
+            <div class="box">
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="profile.html">Profile</a></li>
+              </ul>
+            </div>
+<!--***********************!!!!!!nav!!!!!!*************************-->
                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>

@@ -197,6 +197,10 @@ a:hover, a:active, a:focus {
     Main Navigation             
 -----------------------------------------*/
 
+.btn_all{display:none;}
+
+
+
 .navbar-default {
     background: #ffffff;
     padding: 18px 0;
@@ -660,6 +664,95 @@ footer .footer-copyright {
     margin-top: 0px;
     text-align: center;
   }
+/*----------------------nav--------------------------*/
+.navbar-toggle{display:none;}
+
+/*.btn_all{
+  display:block; float:right; margin-right:15px; margin-top:15px;
+  text-indent:-999999999999px; background:none; border:none; outline:none; 
+  width:30px; height:30px;
+  }
+.btn_all span{
+  display:block; width:20px; height:3px; background:#ccc;
+}*/
+    .btn_all {
+      display:block; float:right; cursor:pointer;
+      width:30px;height:30px;position:absolute;
+             top:50px;right:15px; 
+             z-index:100}
+    .btn_all span    
+    {
+    display:block;
+    position: absolute;
+    right: 0;
+    height: 3px;
+    background-color: #aaa;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    width: 100%;
+    border-radius: 2px;
+    }
+    .btn_all span:nth-child(1){
+        top:0px;
+    }
+    .btn_all span:nth-child(2){
+        top:10px;
+        width:15px
+    }
+    .btn_all span:nth-child(3){
+        top: 20px;
+    }
+    
+
+    .btn_all.on span{background-color:#fff}
+   .btn_all.on span:nth-child(1){
+        top:10px;
+        transform: rotate(45deg)
+    }
+    .btn_all.on span:nth-child(2){
+        top:10px;
+        width:0
+    }
+    .btn_all.on span:nth-child(3){
+        top: 10px;
+        transform: rotate(-45deg)
+    }
+    .box{
+       position:fixed;
+       top:0;left:0;
+       height:100%;
+       width:100%;
+       background:rgba(0,0,0,0.6);
+       z-index:10;
+       display: none
+        
+    }  
+    .box ul{
+      list-style:none; width:100%; padding:0; position:relative;
+      top:35%; margin-bottom:0;
+      }
+    .box ul li{
+      width:100%; font-size:1.562rem; padding:20px 0; font-weight:500;
+      text-align:center;
+      }
+    .box ul li a{color:#fff; display:block;}
+    .box ul li a:hover{color:#472584;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   #about .col-md-8 img {
     padding-right: 0px;
