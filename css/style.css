@@ -648,6 +648,9 @@ footer .footer-copyright {
     font-size: 22px;
   }
 
+.container{max-width:100%;}
+
+
   .section-title h2 {
     font-size: 22px;
     line-height: 35px;
@@ -662,10 +665,61 @@ footer .footer-copyright {
     padding-right: 0px;
   }
 
-  #blog-single-post .blog-post-title h2 {
-    font-size: 29px;
-    line-height: 40px;
-  }
+  #about .left {
+    float: none;
+    width: 60%;
+    margin:0 auto 80px;
+}
+#about .right {
+    float: none;
+    width: 100%;
+}
+#about .right .profile_txt {
+    margin-bottom: 60px;
+}
+#about .skills .tool {
+    float: left;
+    width: calc((100% - 30px)/2);
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+.blog-post-thumb {
+    padding-top: 32px;
+    padding-bottom: 62px;
+    margin-bottom: 32px;
+    float: left;
+    width: calc((100% - 30px)/2);
+    margin-right: 30px;
+}
+.blog-post-thumb:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+
+#designs .row > div {
+    width: 50%;
+    margin-right: 0px;
+}
+#designs .row > div:nth-child(2n) {
+    margin-right: 0;
+}
+#designs .row > div:nth-child(3n) {
+    margin-right: 0px;
+}
+#fh5co-work .fh5co-project-item .fh5co-text span {
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; width:100%; display:block;
+}
+#fh5co-work .fh5co-project-item .fh5co-text h2 {
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
   footer {
     text-align: center;
@@ -674,6 +728,23 @@ footer .footer-copyright {
   footer .col-md-4 {
     padding-top: 42px;
   }
+  footer .col-md-3{
+    margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
